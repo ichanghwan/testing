@@ -1,0 +1,118 @@
+AAAAAAACBABCDEFa    863425
+
+
+
+로컬저장소에 저장하는법
+
+git init -초기화
+-----
+git config --global user. email "github가입email"
+
+git config --global user.name "github_name"
+버전관리를 위한 내 정보 등록
+-----
+git add README.txt(파일등록) 
+git commit -m "위 파일에 대한 설명"
+커밋만들기 . 
+
+-----
+수정후 다시 할때
+git add README.txt 
+git commit -m "수정된 내용 "
+-----
+
+git log   (커밋하넉 최신부터 위에서 나열)
+
+commit 앞 7자리 정도 커밋한 아이디 복사
+
+ex) git checkout 3e17e79
+
+전에 커밋한 내용으로 돌아감 
+-----
+
+git checkout 커밋 ID7자리 다시 돌아감
+
+git checkout -     최신 커밋으로 돌아감
+
+-----
+
+https://github.com/ichanghwan/coffieMall.git
+
+원격저장소 레포지토리 
+
+git remote add 원격저장소 주소
+
+git remote add origin github주소
+
+-----
+
+git push origin master        올리기
+
+원격저장소의 코드와 버전 전체를 내 컴퓨터로 내려받기 =클론(Clone)
+
+깃허브 페이지로 간후 코드 클릭후 주소 복사 다운로드 zip해도 
+
+괜찮지만 log는 안받아짐 
+
+git clone 복사한주소 띄어쓰기 후 . 
+
+ . 안붙히면 폴더안에 폴더가 또 생겨서 그 안에 파일이 받아짐
+
+-----
+갱신된 정보를 받아올때 pull
+
+git pull origin master 
+
+
+-----
+
+git branch - 현재 브랜치 확인
+
+git branch feature/기능이름 - 새로운 브랜치 생성
+
+git checkout feature/기능이름
+
+git merge feature/기능이름 
+
+
+
+------------------------
+                   dos
+cd.. - 체인지 디렉토리 (한단계 전으로 나엄)
+dir - 디렉토리 (안에 뭐가 있는지 확인)
+cd 폴더이름 - (그 안으로 들어감)
+mkdir  폴더이름 -  (폴더생성)
+move abcd.txt c:\mbc\ - (파일 이동)
+rmdir 폴더이름 -  (폴더삭제)
+
+
+
+-----------------------
+
+
+GUI로 연결
+https://www.sourcetreeapp.com/
+
+add - git 폴더가 있어야 로컬저장소
+
+
+vscode 
+
+~~.md 마크다운 
+# ~~ (문서의 타이틀 조금 크게 보임)
+
+--------------------------------
+규칙
+
+1. master 브랜치에는 직접 커밋을 올리지 않는다.
+(동시에 작업하다가 꼬일 수 있다. 혼자할때는 괜찮지만 여러명이서 할때 문제있음)
+2. 기능 개발을 하기 전에 브랜치를 기준으로 새로운 브랜치를 만든다.
+(협업전 새로운 브랜치를 만듬)
+3. 이 브랜치 이름은 feature/기능이름 형식으로 한 명만 커밋을 올린다.
+()
+4. feature/기능 브랜치에서 기능 개발이 끝나면 master브랜치에서 이를 합친다.
+(a,b 합칠때 이런식으로)
+병합(merge)
+
+
+
